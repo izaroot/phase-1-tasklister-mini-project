@@ -1,5 +1,11 @@
 // document.addEventListener("DOMContentLoaded", () => {
   // your code here
+  let removeTask = document.createElement("button")
+  removeTask.innerText = "X"
+
+
+
+
 
   let taskList = document.querySelector("#tasks")
   let taskForm = document.querySelector("#create-task-form")
@@ -12,9 +18,13 @@
     
     let blankLi = document.createElement("li")
     blankLi.className = "task-item"
-    blankLi.innerText = taskValue
+    blankLi.innerHTML = taskValue + removeTask
     
     taskList.append(blankLi)
     console.log("hi")
+    
+  
   })
 // });
+
+
